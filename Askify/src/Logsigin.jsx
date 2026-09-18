@@ -17,15 +17,7 @@ function Logsigin() {
             <button onClick={() => navi("/Post")} className="button-hide"><img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" className="top-ui chat"></img>Post</button>
             <button onClick={() => navi("/Notes")} className="button-hide"><img src="https://cdn-icons-png.flaticon.com/512/3658/3658773.png" className="top-ui chat"></img>Notes</button>
             <button className="button-hide"><img src="https://img.icons8.com/ios7/512/search--v3.png" className="top-ui chat"></img>Search</button>
-            <button onClick={() => navi("/Logsigin")} className="button-hide"><img src="https://cdn-icons-png.flaticon.com/512/5599/5599504.png" className="top-ui chat home"></img>Sign Up</button>
             <button onClick={() => navi("/Logsigin")} className="button-hide"><img src="https://cdn-icons-png.flaticon.com/512/5509/5509636.png" className="top-ui chat home"></img>Sign In</button>
-          </div>
-        </div>
-        <div className="center blbg">
-          <div className="panel2">
-            <button onClick={() => navi("/Chat")} className="button-hide"><img src="https://cdn-icons-png.flaticon.com/512/61/61582.png" className="top-ui chat"></img>Chat</button>
-            <button onClick={() => navi("/Chat")} className="button-hide"><img src="https://cdn-icons-png.flaticon.com/512/61/61582.png" className="top-ui chat"></img>Chat</button>
-            <button onClick={() => navi("/Chat")} className="button-hide"><img src="https://cdn-icons-png.flaticon.com/512/61/61582.png" className="top-ui chat"></img>Chat</button>
           </div>
         </div>
         <div className="homepage"> 
@@ -34,21 +26,9 @@ function Logsigin() {
           
           <div className="backgroundcolor2">
 
-          <div className="padding2 right">
-            
-            <div className=" box">
-            <h2 className=" reco">Recommended!</h2>
-              <div>
-                <div className="col">
-                  <img className="pfp" src="https://pbs.twimg.com/profile_images/1249432648684109824/J0k1DN1T_400x400.jpg"></img><h3 className="name">Kevin</h3> <h3 className="firefighter ocupation">Firefighter</h3>
-                </div>
-                <p className="discription">Hi im Kevin, ask my anything about fire saftey! I can help you answer questions from dangerous situations to daily saftey risks.</p>
-              </div>
-              <div>
-                <div className="col">
-                  <img className="pfp" src="https://pbs.twimg.com/profile_images/1249432648684109824/J0k1DN1T_400x400.jpg"></img><h3 className="name">Michel</h3> <h3 className="nurse ocupation">Nurse</h3>
-                </div>
-                <p className="discription">Whats up! Im Michel ask me for information about common medical questions and common health risks. Im free a lot of times so don't hesitate to ask!.</p>
+          <div className="right">
+            <div className=" bbox">
+              <div className=" box">
               </div>
             </div>
           </div>

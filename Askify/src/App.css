@@ -1,6 +1,15 @@
 ::-webkit-scrollbar{
   display:None;
 }
+#c1{
+}
+.c1{
+
+}
+.smooth{
+  scroll-behavior: smooth;
+}
+
 .top-ui{
   transition: .25s;
   border-radius: 16px;
@@ -64,6 +73,9 @@
 .padding4{
   padding-left:900px;
 }
+.padding5{
+  padding-right:900px;
+}
 .container {
   width: 50vw;
   
@@ -121,6 +133,16 @@ h2{
   box-shadow:2.5px 2.5px gray;
   border-radius:5%;
   overflow:scroll;
+}
+.bbox{
+  background-color:#b8e7ff;
+  width:800px;
+  height:450px;
+  box-shadow:2.5px 2.5px gray;
+  border-radius:5%;
+  overflow:scroll;
+  display:flex;
+  justify-content: space-around;
 }
 .right{
   display:flex;
