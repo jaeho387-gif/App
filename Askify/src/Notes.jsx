@@ -31,8 +31,15 @@ function Notes() {
 
 
 
-            <div className=" bbbbox">
+            <div className="bbbbox">
               <div className="bbbbbbox">
+                <div className="note1">s</div>
+                <div className="note1">s</div>
+                <div className="note1">s</div>
+                <div className="note1">s</div>
+                <div className="note1">s</div>
+                <div className="note1">s</div>
+                <div className="note1">s</div>
                 <div className="note1">s</div>
                 <div className="note1">s</div>
                 <div className="note1">s</div>
