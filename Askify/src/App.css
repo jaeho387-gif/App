@@ -108,6 +108,11 @@
   background-color:#06a4ff;
   transition: 1s;
 }
+.button1:active{
+  background-color:lightgray;
+  transition:.5s;
+  margin:10px;
+}
 .s:hover .button{
   background-color:#06a4ff;
   padding-left: -5px;
@@ -119,6 +124,31 @@
   height:32px;
   text-align: center;
   align-content: center;
+}
+.button1{
+  border-radius: 16px;
+  background-color:white;
+  width: 250px;
+  height:50px;
+  text-align: center;
+  align-content: center;
+  font-size:25px;
+  transition:.5s;
+}
+
+.cen{
+  display:flex;
+  justify-content: center;
+  color:darkblue;
+  text-decoration: underline;
+  transition:.25s;
+}
+.cen:hover{
+  display:flex;
+  justify-content: center;
+  color:black;
+  text-decoration: underline;
+  transition:.25s;
 }
 h2{
   text-decoration: underline;
@@ -134,15 +164,79 @@ h2{
   border-radius:5%;
   overflow:scroll;
 }
+.bbbox{
+  background-color:#e1f5ff;
+  width: 650px;
+  height:450px;
+  border:1px solid black;
+  border-radius:10%;
+  overflow:scroll;
+  display:flex;
+  flex-direction: column;
+
+}
+.note1{
+  width:125px;
+  height:25px;
+  background-color: white;
+  border:1px solid black;
+  border-radius:16px;
+  display:flex;
+  justify-content: center;
+
+}
+.bbbbbbox{
+  background-color:#e1f5ff;
+  width: 150px;
+  height:450px;
+  border:1px solid black;
+  border-radius:10%;
+  overflow:scroll;
+  display:flex;
+  flex-direction: column;
+
+}
+.bbbbbbbox{
+  background-color:#e1f5ff;
+  width: 500px;
+  height:450px;
+  border:1px solid black;
+  border-radius:10%;
+  overflow:scroll;
+  display:flex;
+  flex-direction: column;
+
+}
 .bbox{
   background-color:#b8e7ff;
   width:800px;
   height:450px;
-  box-shadow:2.5px 2.5px gray;
   border-radius:5%;
   overflow:scroll;
   display:flex;
   justify-content: space-around;
+  padding:20px;
+  box-shadow:2.5px 2.5px gray;
+}
+.bbbbox{
+  background-color:#b8e7ff;
+  width:800px;
+  height:450px;
+  border-radius:5%;
+  overflow:scroll;
+  display:flex;
+  justify-content: space-between;
+  padding:20px;
+  box-shadow:2.5px 2.5px gray;
+}
+.qrc{
+  width:150px;
+  height:150px;
+  border:2px solid black;
+  border-radius:5%;
+}
+.stitle{
+  font-size:50px;
 }
 .right{
   display:flex;
@@ -151,7 +245,12 @@ h2{
 .col{
   display:flex;
   flex-direction: row;
+}
+.row{
+  display:flex;
+  flex-direction: col;
   padding:10px;
+  justify-content: center;
 }
 h3{
   padding-right:20px;
@@ -230,6 +329,23 @@ h3{
 .padding3{
   display: flex;
   justify-content: right;
+}
+.frt{
+  display:flex;
+  justify-content: center;
+  padding-top:60px;
+}
+.mrt{
+  padding-left:50px;
+  padding-top:50px;
+  display:flex;
+  flex-direction: column;
+}
+.textbox{
+  width:250px;
+  height:50px;
+  border:1px solid black;
+  border-radius: 16px;
 }
 .center {
   display: flex;

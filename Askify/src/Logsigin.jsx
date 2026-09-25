@@ -27,41 +27,43 @@ function Logsigin() {
           <div className="backgroundcolor2">
 
           <div className="right">
+
+
+
+
             <div className=" bbox">
-              <div className=" box">
+              <div className="bbbox">
+                <div className="col frt">
+                  <div>
+                    <div className="stitle">Sign In</div>
+                    <img className="qrc" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Rickrolling_QR_code.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled&_=20200615212723"></img>
+                  </div>
+                  <div className="mrt">
+                      
+                    <input className="textbox" placeholder=" Email or Username" type="text"></input>
+                    <input className="textbox" placeholder="Password" type="text"></input>
+                    
+                    <label>
+                      <input type="checkbox"></input>
+                      Remember me
+                    </label>
+                    
+                  </div>
+                </div>
+                <div className="row">
+                  <div>
+                    <button className="button1">Sign In</button>
+                    <div className="cen">Help sign in</div>
+                  </div>
+                </div>
               </div>
             </div>
+
+
+
+
           </div>
-          <div className="padding4">
-            <div className="right">
-        
-            <div className="box">
-            <h2 className="post">Posts!</h2>
-              <div>
-                <div className="col">
-                  <img className="pfp" src="https://pbs.twimg.com/profile_images/1249432648684109824/J0k1DN1T_400x400.jpg"></img><h3 className="name">James</h3> <h3 className="guest ocupation">Guest</h3>
-                </div>
-                <p className="discription">I keep spending more and more time on my phone everyday.</p>
-                <div className="col">
-                  <img className="pfp smaller" src="https://pbs.twimg.com/profile_images/1249432648684109824/J0k1DN1T_400x400.jpg"></img><h3 className="name">Tom</h3> <h3 className="therapist ocupation">Therapist</h3>
-                </div>
-                <p className="discription">Maybe you should distract yourself from the phone and try reading a book!</p>
-                
-              </div>.
-              <div>
-                <div className="col">
-                  <img className="pfp" src="https://pbs.twimg.com/profile_images/1249432648684109824/J0k1DN1T_400x400.jpg"></img><h3 className="name">Michel</h3> <h3 className="guest ocupation">Guest</h3>
-                </div>
-                <p className="discription">What to do in a flood?</p>
-                <div className="col">
-                  <img className="pfp smaller" src="https://pbs.twimg.com/profile_images/1249432648684109824/J0k1DN1T_400x400.jpg"></img><h3 className="name">Robbert</h3> <h3 className="firefighter ocupation">Firefighter</h3>
-                </div>
-                <p className="discription">First try contacting the Firefighters or the police department, then try to avoid the water.</p>
-              </div>
-            </div>
-            </div>
-            
-          </div>
+          
         </div>
       </div>
       </div>
