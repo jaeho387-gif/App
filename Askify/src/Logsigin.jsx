@@ -41,7 +41,7 @@ function Logsigin() {
                   <div className="mrt">
                       
                     <input className="textbox" placeholder=" Email or Username" type="text"></input>
-                    <input className="textbox" placeholder="Password" type="text"></input>
+                    <input className="textbox" placeholder="Password" type="password"></input>
                     
                     <label>
                       <input type="checkbox"></input>
