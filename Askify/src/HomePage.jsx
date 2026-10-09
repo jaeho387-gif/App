@@ -1,6 +1,8 @@
-import { useState } from 'react'
 import './App.css'
 import {useNavigate} from "react-router-dom";
+import SearchModal from './SearchModal'
+import OfficeAvatar from './OfficeAvatar'
+import {officeCast} from './officeCast'
 
 function HomePage() {
 
@@ -16,11 +18,11 @@ function HomePage() {
             <button onClick={() => navi("/")} className="button-hide"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" className="top-ui home chat"></img>Home</button>
             <button onClick={() => navi("/Post")} className="button-hide"><img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" className="top-ui chat"></img>Post</button>
             <button onClick={() => navi("/Notes")} className="button-hide"><img src="https://cdn-icons-png.flaticon.com/512/3658/3658773.png" className="top-ui chat"></img>Notes</button>
-            <button className="button-hide"><img src="https://img.icons8.com/ios7/512/search--v3.png" className="top-ui chat"></img>Search</button>
+            <SearchModal />
             <button onClick={() => navi("/Chat")} className="button-hide"><img src="https://cdn-icons-png.flaticon.com/512/5509/5509636.png" className="top-ui chat"></img>Sign In</button>
           </div>
         </div>
-        <div className="homepage"> 
+        <div className="homepage home-page"> 
           
           <h1 className="title">A s k i f y</h1>
           
@@ -28,47 +30,47 @@ function HomePage() {
 
           <div className="padding2 right">
             
-            <div className=" box">
+            <div className="box home-card home-recommendations">
             <h2 className=" reco">Recommended!</h2>
               <div>
-                <div className="col">
-                  <img className="pfp" src="https://pbs.twimg.com/profile_images/1249432648684109824/J0k1DN1T_400x400.jpg"></img><h3 className="name">Kevin</h3> <h3 className="firefighter ocupation">Firefighter</h3>
+                <div className="col profile-row">
+                  <OfficeAvatar character="dwight" className="note-avatar" /><h3 className="name">{officeCast.dwight.name}</h3> <h3 className={`note-job ocupation ${officeCast.dwight.jobColor}`}>{officeCast.dwight.occupation}</h3>
                 </div>
-                <p className="discription">Hi im Kevin, ask my anything about fire saftey! I can help you answer questions from dangerous situations to daily saftey risks.</p>
+                <p className="discription">I keep the Scranton branch ready for anything. What should our shared office emergency kit include?</p>
               </div>
               <div>
-                <div className="col">
-                  <img className="pfp" src="https://pbs.twimg.com/profile_images/1249432648684109824/J0k1DN1T_400x400.jpg"></img><h3 className="name">Michel</h3> <h3 className="nurse ocupation">Nurse</h3>
+                <div className="col profile-row">
+                  <OfficeAvatar character="pam" className="note-avatar" /><h3 className="name">{officeCast.pam.name}</h3> <h3 className={`note-job ocupation ${officeCast.pam.jobColor}`}>{officeCast.pam.occupation}</h3>
                 </div>
-                <p className="discription">Whats up! Im Michel ask me for information about common medical questions and common health risks. Im free a lot of times so don't hesitate to ask!.</p>
+                <p className="discription">From the reception desk, I see how quickly office updates get missed. How can we make branch announcements easier to follow?</p>
               </div>
             </div>
           </div>
           <div className="padding4">
             <div className="right">
         
-            <div className="box">
+            <div className="box home-card home-posts">
             <h2 className="post">Posts!</h2>
               <div>
-                <div className="col">
-                  <img className="pfp" src="https://pbs.twimg.com/profile_images/1249432648684109824/J0k1DN1T_400x400.jpg"></img><h3 className="name">James</h3> <h3 className="guest ocupation">Guest</h3>
+                <div className="col profile-row">
+                  <OfficeAvatar character="jim" className="note-avatar" /><h3 className="name">{officeCast.jim.name}</h3> <h3 className={`note-job ocupation ${officeCast.jim.jobColor}`}>{officeCast.jim.occupation}</h3>
                 </div>
-                <p className="discription">I keep spending more and more time on my phone everyday.</p>
-                <div className="col">
-                  <img className="pfp smaller" src="https://pbs.twimg.com/profile_images/1249432648684109824/J0k1DN1T_400x400.jpg"></img><h3 className="name">Tom</h3> <h3 className="therapist ocupation">Therapist</h3>
+                <p className="discription">What could we do to make weekly meetings more useful for everyone at the Scranton branch?</p>
+                <div className="col profile-row">
+                  <OfficeAvatar character="angela" className="note-avatar" /><h3 className="name">{officeCast.angela.name}</h3> <h3 className={`note-job ocupation ${officeCast.angela.jobColor}`}>{officeCast.angela.occupation}</h3>
                 </div>
-                <p className="discription">Maybe you should distract yourself from the phone and try reading a book!</p>
+                <p className="discription">We can share a short agenda beforehand, keep each topic focused, and send everyone a clear list of next steps.</p>
                 
-              </div>.
+              </div>
               <div>
-                <div className="col">
-                  <img className="pfp" src="https://pbs.twimg.com/profile_images/1249432648684109824/J0k1DN1T_400x400.jpg"></img><h3 className="name">Michel</h3> <h3 className="guest ocupation">Guest</h3>
+                <div className="col profile-row">
+                  <OfficeAvatar character="michael" className="note-avatar" /><h3 className="name">{officeCast.michael.name}</h3> <h3 className={`note-job ocupation ${officeCast.michael.jobColor}`}>{officeCast.michael.occupation}</h3>
                 </div>
-                <p className="discription">What to do in a flood?</p>
-                <div className="col">
-                  <img className="pfp smaller" src="https://pbs.twimg.com/profile_images/1249432648684109824/J0k1DN1T_400x400.jpg"></img><h3 className="name">Robbert</h3> <h3 className="firefighter ocupation">Firefighter</h3>
+                <p className="discription">How can we plan a Dundies night that the whole Scranton branch can enjoy?</p>
+                <div className="col profile-row">
+                  <OfficeAvatar character="kevin" className="note-avatar" /><h3 className="name">{officeCast.kevin.name}</h3> <h3 className={`note-job ocupation ${officeCast.kevin.jobColor}`}>{officeCast.kevin.occupation}</h3>
                 </div>
-                <p className="discription">First try contacting the Firefighters or the police department, then try to avoid the water.</p>
+                <p className="discription">We could ask the team for ideas, offer a few food choices, and make sure everyone who wants to help has a small part.</p>
               </div>
             </div>
             </div>
